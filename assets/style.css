@@ -1,82 +1,134 @@
-* {
-    box-sizing: border-box;
-  }
-  
   body {
     font-family: Arial;
     margin: 0;
   }
+
+  main {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: none;
+    margin-top: none;
+  }
   
   header {
-    padding: 60px;
+    padding: 30px;
     text-align: center;
-    background: #13293d;
+    background: crimson;
     color: #fff;
   }
   
+  section {
+    background-color: #fff;
+  }
+  
+  footer {
+    display: flex;
+    padding: 20px;
+    text-align: center;
+    background-color: black;  
+  }
+  
+  /* Nav Bar */
+
   nav {
     display: flex;
-    background-color: #d8a47f;
+    background-color: black;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+
   }
   
   nav p {
     padding: 14px 20px;
-    text-decoration: none;
-  }
-  
-  main {
-    display: flex;
-  }
-  
-  aside {
-    flex: 30%;
-    background-color: #b9c6ae;
-    padding: 20px;
-    flex-wrap: wrap;
-  }
-  
-  section {
-    flex: 70%;
-    background-color: #fff;
-    padding: 20px;
-  }
-  
-  footer {
-    padding: 20px;
     text-align: center;
-    background: #13293d;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav li {
+    display: inline;
+    text-align: center;
+    color: #fff;
+  }
+
+  nav a {
+    color: #fff;
+    text-align: center;
+  }
+
+  nav a:visited {
+    color: #fff;
+  }
+
+  /* Link Colors */
+  a {
+    color: black;
+    align-items: center;
+  }
+  a:visited {
+    color:black
+  }
+
+  /* Image Placeholders */
+  .card {
+    padding: 10px;
+    width: 250px;
+    align-items: center;
+    border-style:solid;
+    border-width: 1px;
+    flex: 40%;
+  }
+
+  .card header {
+    padding: 20px;
+    background:black;
     color: #fff;
   }
   
-  /* Image Placeholders */
-  .sample-img {
-    background-color: #fff;
+  .card img {
     width: 100%;
-    padding: 20px;
-    height: 200px;
-    border: 1px solid black;
+  }
+
+  /* Work section */
+  .workingImages1{
+    display: flex ;
+    align-items: center;
+    flex-direction: row;
+  }
+  .workingImages2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  /* Contact Info Section */
+  .contactinfo ul {
+    align-items: center;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    display: flex;
   }
   
-  /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
   
   /* Tablets - header changes color */
   @media screen and (max-width: 992px) {
     header {
-      background: #772014;
+      background: navy;
     }
   }
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
     nav {
-      background-color: #bb8588;
+      background-color:forestgreen;
+    }
+    footer {
+      background-color: forestgreen;
     }
   }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  }
+
   
