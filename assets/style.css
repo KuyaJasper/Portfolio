@@ -6,26 +6,18 @@
   main {
     margin-left: 25%;
     margin-right: 25%;
-    margin-bottom: none;
-    margin-top: none;
+    margin-bottom: 100px;
   }
   
   header {
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     background: crimson;
     color: #fff;
   }
   
-  section {
-    background-color: #fff;
-  }
-  
-  footer {
-    display: flex;
-    padding: 20px;
-    text-align: center;
-    background-color: black;  
+  header h1{
+    font-size: 75px;
   }
   
   /* Nav Bar */
@@ -39,11 +31,7 @@
 
   }
   
-  nav p {
-    padding: 14px 20px;
-    text-align: center;
-  }
-
+  /* Nav links */
   nav ul {
     text-align: center;
   }
@@ -57,20 +45,13 @@
   nav a {
     color: #fff;
     text-align: center;
+    padding: 50px;
   }
 
   nav a:visited {
     color: #fff;
   }
 
-  /* Link Colors */
-  a {
-    color: black;
-    align-items: center;
-  }
-  a:visited {
-    color:black
-  }
 
   /* Image Placeholders */
   .card {
@@ -80,6 +61,7 @@
     border-style:solid;
     border-width: 1px;
     flex: 40%;
+    text-align: center;
   }
 
   .card header {
@@ -114,6 +96,33 @@
   }
   
   
+/* Footer */
+
+footer {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background-color: black;
+}
+
+footer h2 {
+  color: #fff;
+  font-weight: 300;
+}
+
+footer a {
+  color: #fff;
+  padding: 20px;
+  justify-content: space-between;
+  position: relative;
+  display: inline;
+  
+}
+footer a:visited{
+  color: #fff;
+}
+
+
   /* Tablets - header changes color */
   @media screen and (max-width: 992px) {
     header {
