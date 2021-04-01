@@ -10,5 +10,10 @@ I did not have much time to put a lot of information, so I used a lorem ipsum ge
 
 I will be continually working to polish this up and will re submit at a later date.
 
+
+# Screen Shot
+
+![](./assets/Images/DeployedApp.gif)
+#
 [Link to Page]( https://kuyajasper.github.io/Portfolio/)
 

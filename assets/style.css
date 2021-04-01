@@ -1,12 +1,17 @@
+  /*Global Elements */
   body {
     font-family: Arial;
-    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   main {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 100px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
   }
   
   header {
@@ -18,8 +23,16 @@
   
   header h1{
     font-size: 75px;
+    margin-bottom: 0;
+    -webkit-text-stroke: 3px black;
   }
-  
+
+  .container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
   /* Nav Bar */
 
   nav {
@@ -52,12 +65,20 @@
     color: #fff;
   }
 
+  /*About Me Section*/
 
-  /* Image Placeholders */
+  #profilePic {
+    float: left;
+  }
+  #biotext {
+    display: inline;
+  }
+
+  /* Image Cards */
   .card {
     padding: 10px;
     margin: 10px;
-    width: 250px;
+    width: 350px;
     align-items: center;
     border-style:solid;
     border-width: 1px;
@@ -77,30 +98,25 @@
   }
 
   /* Work section */
-  .workingImages1{
+
+ .workingImages1 {
     display: flex ;
     align-items: center;
     flex-direction: row;
     padding: 5px;
-  }
-  .workingImages2{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 5px;
+    flex-grow: inherit;
+ }
 
-  }
+#work-section {
+  margin-top: 10px;
+}
+ 
+#firstproject {
+  width: auto;
+  height: auto;
+}
 
-  /* Contact Info Section */
-  .contactinfo ul {
-    align-items: center;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-    display: flex;
-  }
-  
-  
+
 /* Footer */
 
 footer {
@@ -108,6 +124,13 @@ footer {
   padding: 20px;
   align-items: center;
   background-color: black;
+  align-items: center;
+  position: relative;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
 }
 
 footer h2 {
@@ -118,7 +141,6 @@ footer h2 {
 footer a {
   color: #fff;
   padding: 20px;
-  justify-content: space-between;
   position: relative;
   display: inline;
   
@@ -137,11 +159,15 @@ footer a:visited{
   
   /* Large smartphones - navbar changes color */
   @media screen and (max-width: 768px) {
+    main {
+      margin: 10%;
+      text-align: center;
+    }
     nav {
-      background-color:forestgreen;
+      background-color:rgb(83, 24, 131);
     }
     footer {
-      background-color: forestgreen;
+      background-color: rgb(83, 24, 131);
     }
 
     nav ul {
@@ -166,18 +192,41 @@ footer a:visited{
     ul {
       list-style-type: none;
     }
-    .workingImages1{
-      display: flex ;
-      align-items: center;
-      flex-direction: column;
-      padding: 5px;
-    }
-    .workingImages2{
+
+    #work-section {
       display: flex;
-      align-items: center;
       flex-direction: column;
-      padding: 5px;
     }
+
+    #firstproject {
+      flex-grow: inherit;
+      width: 500px;
+    }
+
+    #firstproject img{
+      width: 100%;
+    }
+
+    .workingImages1, .workingImages2 {
+      display: flex;
+      flex-shrink: inherit;
+      flex-direction: column;
+    }
+
+    footer {
+      text-align: center;
+    }
+
   }
 
-  
+  @media screen and (max-width: 375px) {
+    #firstproject {
+      width: 275px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+  }
+
+ 
